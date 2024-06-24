@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="6" failed="1" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-17T22:53:31 IST" name="Tutorial Ninja Test Suite" finished-at="2024-06-17T22:54:07 IST" duration-ms="36069">
+    <groups>
+    </groups>
+    <test started-at="2024-06-17T22:53:31 IST" name="TutorialNinjaTest" finished-at="2024-06-17T22:54:07 IST" duration-ms="36069">
+      <class name="com.tutorialninja.qa.testcases.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:53:31 IST" name="setup" finished-at="2024-06-17T22:53:33 IST" duration-ms="2264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserAbleToLoginWithValidCredentials()[pri:1, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:53:33 IST" name="verifyUserAbleToLoginWithValidCredentials" finished-at="2024-06-17T22:53:44 IST" duration-ms="10936" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='content']/h2"}
+  (Session info: chrome=125.0.6422.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cfec335bfdb4bce68b5ec39bc54946c5, findElement {value=//div[@id='content']/h2, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.176, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\frank\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63980}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63980/devtoo..., se:cdpVersion: 125.0.6422.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cfec335bfdb4bce68b5ec39bc54946c5]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='content']/h2"}
+  (Session info: chrome=125.0.6422.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.3'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [cfec335bfdb4bce68b5ec39bc54946c5, findElement {value=//div[@id='content']/h2, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.176, chrome: {chromedriverVersion: 125.0.6422.141 (4b1e8393712..., userDataDir: C:\Users\frank\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63980}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63980/devtoo..., se:cdpVersion: 125.0.6422.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: cfec335bfdb4bce68b5ec39bc54946c5
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+at com.tutorialninja.qa.pages.AccountPage.myAccountTxtIsDisplayed(AccountPage.java:24)
+at com.tutorialninja.qa.testcases.LoginTest.verifyUserAbleToLoginWithValidCredentials(LoginTest.java:50)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserAbleToLoginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:53:44 IST" name="tearDown" finished-at="2024-06-17T22:53:44 IST" duration-ms="272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="verifyUserAbleToLoginWithInvalidCredentials()[pri:2, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:53:44 IST" name="verifyUserAbleToLoginWithInvalidCredentials" finished-at="2024-06-17T22:53:44 IST" depends-on-methods="com.tutorialninja.qa.testcases.LoginTest.verifyUserAbleToLoginWithValidCredentials" duration-ms="1" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method com.tutorialninja.qa.testcases.LoginTest.verifyUserAbleToLoginWithInvalidCredentials() on instance com.tutorialninja.qa.testcases.LoginTest@397fbdb depends on not successfully finished methods 
+[com.tutorialninja.qa.testcases.LoginTest.verifyUserAbleToLoginWithValidCredentials() on instance com.tutorialninja.qa.testcases.LoginTest@397fbdb]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method com.tutorialninja.qa.testcases.LoginTest.verifyUserAbleToLoginWithInvalidCredentials() on instance com.tutorialninja.qa.testcases.LoginTest@397fbdb depends on not successfully finished methods 
+[com.tutorialninja.qa.testcases.LoginTest.verifyUserAbleToLoginWithValidCredentials() on instance com.tutorialninja.qa.testcases.LoginTest@397fbdb]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserAbleToLoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:53:46 IST" name="setup" finished-at="2024-06-17T22:53:48 IST" duration-ms="1894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserAbleToLoginWithMultipleValidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:53:48 IST" name="verifyUserAbleToLoginWithMultipleValidCredentials" data-provider="ValidCredentials" finished-at="2024-06-17T22:53:49 IST" duration-ms="1385" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ram20jun1996@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserAbleToLoginWithMultipleValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:53:49 IST" name="tearDown" finished-at="2024-06-17T22:53:49 IST" duration-ms="176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:53:49 IST" name="setup" finished-at="2024-06-17T22:53:51 IST" duration-ms="1897" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserAbleToLoginWithMultipleValidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:53:51 IST" name="verifyUserAbleToLoginWithMultipleValidCredentials" data-provider="ValidCredentials" finished-at="2024-06-17T22:53:52 IST" duration-ms="1394" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ram20jun1997@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserAbleToLoginWithMultipleValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:53:52 IST" name="tearDown" finished-at="2024-06-17T22:53:53 IST" duration-ms="152" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:53:53 IST" name="setup" finished-at="2024-06-17T22:53:54 IST" duration-ms="1868" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserAbleToLoginWithMultipleValidCredentials(java.lang.String,java.lang.String)[pri:3, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:53:54 IST" name="verifyUserAbleToLoginWithMultipleValidCredentials" data-provider="ValidCredentials" finished-at="2024-06-17T22:53:56 IST" duration-ms="1444" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[ram20jun1998@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserAbleToLoginWithMultipleValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:53:56 IST" name="tearDown" finished-at="2024-06-17T22:53:56 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:53:56 IST" name="setup" finished-at="2024-06-17T22:53:59 IST" duration-ms="3104" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserAbleToLoginWithMultipleInvalidCredentials(java.lang.String,java.lang.String)[pri:4, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:53:59 IST" name="verifyUserAbleToLoginWithMultipleInvalidCredentials" data-provider="InvalidCredentials" finished-at="2024-06-17T22:54:00 IST" duration-ms="1016" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1ram20jun1996@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234567]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserAbleToLoginWithMultipleInvalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:54:00 IST" name="tearDown" finished-at="2024-06-17T22:54:00 IST" duration-ms="161" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:54:00 IST" name="setup" finished-at="2024-06-17T22:54:02 IST" duration-ms="1839" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserAbleToLoginWithMultipleInvalidCredentials(java.lang.String,java.lang.String)[pri:4, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:54:02 IST" name="verifyUserAbleToLoginWithMultipleInvalidCredentials" data-provider="InvalidCredentials" finished-at="2024-06-17T22:54:03 IST" duration-ms="962" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2ram20jun1997@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1234578]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserAbleToLoginWithMultipleInvalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:54:03 IST" name="tearDown" finished-at="2024-06-17T22:54:03 IST" duration-ms="166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:54:03 IST" name="setup" finished-at="2024-06-17T22:54:05 IST" duration-ms="1931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyUserAbleToLoginWithMultipleInvalidCredentials(java.lang.String,java.lang.String)[pri:4, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:54:05 IST" name="verifyUserAbleToLoginWithMultipleInvalidCredentials" data-provider="InvalidCredentials" finished-at="2024-06-17T22:54:06 IST" duration-ms="1268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[3ram20jun1998@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123459]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserAbleToLoginWithMultipleInvalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.tutorialninja.qa.testcases.LoginTest@397fbdb]" started-at="2024-06-17T22:54:06 IST" name="tearDown" finished-at="2024-06-17T22:54:07 IST" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.tutorialninja.qa.testcases.LoginTest -->
+    </test> <!-- TutorialNinjaTest -->
+  </suite> <!-- Tutorial Ninja Test Suite -->
+</testng-results>
